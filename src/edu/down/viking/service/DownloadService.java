@@ -103,6 +103,7 @@ public class DownloadService extends Service
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		String fileName=intent.getStringExtra("fileName");
+		
 		String flag=intent.getStringExtra("flag");//標識
 		//根據不同標識進行不同操作
 		if(flag.equals("startDownload"))
@@ -130,7 +131,9 @@ public class DownloadService extends Service
 
 	public void startDownload(String fileName)
 	{
-		String downPath=AppConstant.NetworkConstant.downPath+fileName;//下载地址
+//		String downPath=AppConstant.NetworkConstant.downPath+fileName;//下载地址
+		
+		String downPath=AppConstant.NetworkConstant.downPath;//下载地址
 		String savePath=AppConstant.NetworkConstant.savePath;//保存地址
 		if(!dao.isHasFile(downPath))
 		{

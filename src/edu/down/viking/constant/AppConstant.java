@@ -12,7 +12,7 @@ public class AppConstant
 	public class NetworkConstant
 	{
 		//downPath为下载地址
-		public static final String downPath="http://10.147.140.245:8080/mp3/";
+		public static final String downPath="http://123.57.37.51/2015-03-08.txt";
 		//savePath为保存音频的路径
 		public static final String savePath="/mnt/sdcard/localDown/";
 
